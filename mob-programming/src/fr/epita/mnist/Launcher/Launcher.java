@@ -79,7 +79,7 @@ public class Launcher {
 
 
 
-// F- per
+// Task F
         List<MNISTImage> labellist = (imagesByLabelSORTED.get(testLabel)).stream().limit(10).collect(Collectors.toList());
        classifier.calculatedistance_centroid(labellist);
 
@@ -101,6 +101,7 @@ public class Launcher {
        System.out.println("\nUsing Test dataset");
        classifier.confusionMatrix(images_ByLabel);
 
+       // confusion matrix using standard deviation
         standarddeviation standardCalculation = new standarddeviation();
         System.out.println(" Performing classification using standard deviation\n");
         classifier.train_model_using_trainset2(imagesByLabel);

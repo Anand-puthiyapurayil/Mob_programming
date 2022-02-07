@@ -9,7 +9,7 @@ import java.util.Map;
 public class CentroidClassifier {
 	 Map<Double, MNISTImage> centroids = new LinkedHashMap<>();
 	 MNISTImageProcessor imageProcessor= new MNISTImageProcessor();
-
+// training the dataset using centroid
 	 public void train_model_using_trainset(Map<Double, List<MNISTImage>> dataset){
 
 		 for (Map.Entry<Double, List<MNISTImage>> entry : dataset.entrySet()){
@@ -19,7 +19,7 @@ public class CentroidClassifier {
 
 
 	 }
-
+// training the dataset using standard deviation
 	public double train_model_using_trainset2(Map<Double, List<MNISTImage>> dataset){
 
 		for (Map.Entry<Double, List<MNISTImage>> entry : dataset.entrySet()){
